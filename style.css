@@ -1,0 +1,56 @@
+body {
+  background: #ded3ce;
+}
+
+#bg_white {
+  background: #FFFFFF;
+}
+
+#main-bio,
+#bio-image,
+#main-bio {
+  width: 90%;
+}
+#bio-image {
+  float: left;
+  width: 300px;
+  height: 200px;
+
+}
+#bio-image2 {
+  float: left;
+  width: 200px;
+  height: 125px;
+
+}
+#visualization {
+  float: left;
+  width: 800px;
+  height: 550px;
+
+}
+#viz-header {
+  text-align: center
+
+}
+h2 {
+ padding: 20px;
+ white-space: pre;
+ font-family: "Segoe UI";
+}
+hr.style-one {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+.thead {
+/*    background-color: #113C66;*/
+    background-color: #a49e99;
+    color: 	#202020	;
+}
+.text {
+    padding: 15px;
+    margin-left: 10px
+}

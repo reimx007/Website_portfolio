@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Rad Latitude Project</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="theme_1582925682306.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<!--body starts here!-->
+<body>
+<!--nav bar starts here!-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="index.html">Latitude</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="nav navbar-nav navbar-right">
+        <li class="nav-item dropdown">
+         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="fig1.html">Latitude vs temperature</a>
+          <a class="dropdown-item" href="fig2.html">Latitude vs humidity</a>
+          <a class="dropdown-item" href="fig3.html">Latitude vs cloudiness</a>
+          <a class="dropdown-item" href="fig4.html">Latitude vs wind speed</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="comparisons.html">Comparisons<span class="sr-only">(current)</span></a>
+      </li>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="data.html">Data<span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container" id="bg_white">
+
+    <div class="row">
+
+      <!-- 2/3rds of our screen (8/12) -->
+      <div class="col-md-8 col-sm-12">
+        <!-- This is column 1 of 3 -->
+        <section id="main-bio">
+            <section id="figure">
+                <h2 id="bio-name">Summary: Latitude vs various weather patterns</h2>
+                <hr>
+                <a target="_blank" href="assets/Fig1.png">
+                  <img class="img-responsive" id="bio-image" src="assets/Fig1.png" alt="fig 1">
+                </a>
+            </section>
+            <p class="text">The goal of this project was to determine how weather phenomenon changes at different latitudes, and whether there was any relationship between weather patterns and the location on the earth’s surface. To perform this task, we pulled the weather data from the closest cities to over 500 randomly generated X-Y coordinates. The weather data was obtained from the Open Weather Map API, and the latitude of each was plotted against a specific weather phenomenon. We looked specifically at: temperature, humidity, cloudiness and wind speed.</p>
+            <p class="text">This site summarizes the findings by displaying the graphs that were produced. In addition to each graph produced, the original weather data for each city can be found on the Data page. Enjoy! And maybe you can get some ideas on where to travel for your next vacation!
+            </p>
+        </section>
+      </div>
+      <div class="col-md-4 col-sm-12">
+          <div>
+            <section id="main-bio">
+                <section id="figure">
+                    <h2 id="bio-name">Visualizations</h2>
+                    <hr>
+                </section>
+            </section>
+          </div>
+          <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="assets/Fig1.png" alt="Latitude vs temperature">
+          <div class="card-body">
+<!--
+            <h5 class="card-title">Latitude vs temperature</h5>
+            <p class="card-text"></p>
+-->
+            <a href="fig1.html" class="btn btn-primary">Latitude vs temperature</a>
+          </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="assets/Fig2.png" alt="Latitude vs humidity">
+          <div class="card-body">
+<!--
+            <h5 class="card-title">Latitude vs temperature</h5>
+            <p class="card-text"></p>
+-->
+            <a href="fig2.html" class="btn btn-primary">Latitude vs humidity</a>
+          </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="assets/Fig3.png" alt="Latitude vs cloudiness">
+          <div class="card-body">
+<!--
+            <h5 class="card-title">Latitude vs temperature</h5>
+            <p class="card-text"></p>
+-->
+            <a href="fig3.html" class="btn btn-primary">Latitude vs cloudiness</a>
+          </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="assets/Fig4.png" alt="Latitude vs wind speed">
+          <div class="card-body">
+<!--
+            <h5 class="card-title">Latitude vs temperature</h5>
+            <p class="card-text"></p>
+-->
+            <a href="fig4.html" class="btn btn-primary">Latitude vs wind speed</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+</body>
+
+</html>
