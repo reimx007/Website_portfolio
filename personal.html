@@ -10,34 +10,30 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
- <!--custom CSS starts here-->
+    <!--custom CSS starts here-->
   <link rel="stylesheet" href="theme_1582925682306.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <!--nav bar starts here!-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <a class="navbar-brand" href="index.html">Latitude</a>
+  <a class="navbar-brand" href="index.html">Home</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="nav navbar-nav navbar-right">
         <li class="nav-item dropdown">
-         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots</a>
+         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="fig1.html">Latitude vs temperature</a>
-          <a class="dropdown-item" href="fig2.html">Latitude vs humidity</a>
-          <a class="dropdown-item" href="fig3.html">Latitude vs cloudiness</a>
-          <a class="dropdown-item" href="fig4.html">Latitude vs wind speed</a>
+          <a class="dropdown-item" href="gis.html">GIS & Cartogrpahy</a>
+          <a class="dropdown-item" href="dataviz.html">Data visualizations</a>
+          <a class="dropdown-item" href="script.html">Scripting</a>
+          <a class="dropdown-item" href="Personal.html">Personal interests</a>
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="comparisons.html">Comparisons<span class="sr-only">(current)</span></a>
-      </li>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="data.html">Data<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="contact.html">Contact<span class="sr-only">(current)</span></a>
       </li>
     </ul>
   </div>
@@ -52,12 +48,12 @@
         <!-- This is column 1 of 3 -->
         <section>
             <section id="figure">
-                <h2 id="viz-header">Latitude vs cloudiness</h2>
-                <a target="_blank" href="assets/Fig3.png">
-                <img id="visualization" src="assets/Fig3.png" alt="Latitude vs cloudiness">
+                <h2 id="viz-header">Latitude vs wind speed</h2>
+                <a target="_blank" href="assets/Fig1.png">
+                <img id="visualization" src="assets/Fig4.png" alt="Latitude vs wind speed">
                 </a>
             </section>
-            <p class="text">There were no clear trends that were discovered after comparing a location’s latitude to the cloudiness on that particular day. This generally makes sense, as a locations cloudiness or sunniness can be determined by a variety of geographic factors. None of those factors necessarily rely on latitude. We can, however, see that the cloudiness reported as a percentage, and certain percent values seem to be used a lot: 90%, 75%, 40%, etc. </p>
+            <p class="text">There were no clear trends that were discovered after comparing a location’s latitude to the wind speed on that particular day. This generally makes sense, as a locations cloudiness or sunniness can be determined by a variety of geographic factors. None of those factors necessarily rely on latitude. We can, however, see that the highest wind speeds seem to occur at higher latitudes. This is true both in the northern hemisphere and the southern hemisphere.  </p>
         </section>
       </div>
 

@@ -18,6 +18,16 @@ body {
   margin-right: 20px;
 }
 
+#card-image {
+  float: left;
+  width: 450px;
+  height: 225px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
 #bio-image2 {
   float: left;
   width: 200px;

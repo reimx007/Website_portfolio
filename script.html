@@ -17,27 +17,23 @@
 <body>
 <!--nav bar starts here!-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <a class="navbar-brand" href="index.html">Latitude</a>
+  <a class="navbar-brand" href="index.html">Home</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="nav navbar-nav navbar-right">
         <li class="nav-item dropdown">
-         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots</a>
+         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="fig1.html">Latitude vs temperature</a>
-          <a class="dropdown-item" href="fig2.html">Latitude vs humidity</a>
-          <a class="dropdown-item" href="fig3.html">Latitude vs cloudiness</a>
-          <a class="dropdown-item" href="fig4.html">Latitude vs wind speed</a>
+          <a class="dropdown-item" href="gis.html">GIS & Cartogrpahy</a>
+          <a class="dropdown-item" href="dataviz.html">Data visualizations</a>
+          <a class="dropdown-item" href="script.html">Scripting</a>
+          <a class="dropdown-item" href="Personal.html">Personal interests</a>
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="comparisons.html">Comparisons<span class="sr-only">(current)</span></a>
-      </li>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="data.html">Data<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="contact.html">Contact<span class="sr-only">(current)</span></a>
       </li>
     </ul>
   </div>
@@ -45,29 +41,27 @@
 
 <div class="container" id="bg_white">
 
-    <div class="row">
+  <div class="row">
 
-      <!-- 2/3rds of our screen (8/12) -->
-      <div class="col-md-8">
-        <!-- This is column 1 of 3 -->
-        <section>
-            <section id="figure">
-                <h2 id="viz-header">Latitude vs temperature</h2>
-                <a target="_blank" href="assets/Fig1.png">
-                <img id="visualization" src="assets/Fig1.png" alt="Latitude vs temperature">
-                </a>
-            </section>
-            <p class="text">The Latitude vs temperature graph is were we tend to see the most obvious trends and relationships. In the Northern Hemisphere, the warmest temperatures around the equator and the temperatures drop the further north you go.In the Southern Hemisphere, the warmest temperatures are around 20 degrees south. South from that point, the temperatures will drop a bit to around 40F. </p>
-        </section>
+    <!-- 2/3rds of our screen (8/12) -->
+    <div class="col-md-6 col-sm-12">
+      <img src="assets/python.png" class="card-img-top" id="card-image" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Python & APIs</h5>
+        <p class="card-text">This project utlized Python, Pandas and Matplotlib to make calls to various APIs. </p>
+        <a target="_blank" href="https://github.com/reimx007/Python-API-Challenge" class="btn btn-primary">GitHub repo</a>
       </div>
-
-      <!-- Columns float left, so all adjacent rows will appear next to each other (as long as not all space gets taken up) -->
     </div>
 
-
-
-
-</div>
+    <!-- <div class="col-md-6 col-sm-12">
+      <img src="assets/d3.png" class="card-img-top" id="card-image" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">D3.js</h5>
+        <p class="card-text">This project largely incorporates the D3 library and SVGs to create an interactive graph displaying demographic and health data.</p>
+        <a target="_blank" href="https://reimx007.github.io/D3-challenge/" class="btn btn-primary">GitHub pages</a>
+        <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+      </div>
+    </div>
 </body>
 
 </html>
